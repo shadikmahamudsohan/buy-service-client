@@ -1,3 +1,3 @@
 # Buy service client
 
-Live link: [http://localhost:3000/](http://localhost:3000/)
+Live link: [https://buy-service-client.vercel.app/](https://buy-service-client.vercel.app/)
