@@ -6,7 +6,7 @@ const Banner = () => {
             <div class="hero-content grid grid-cols-1 md:grid-cols-2 w-full md:w-2/3 mx-auto container">
 
                 {/* texts */}
-                <div className='w-full pr-0 md:pr-14'>
+                <div className='w-full pr-0 mt-20 text-center md:text-left md:mt-0 md:pr-14'>
                     <h1 class="text-6xl font-bold text-primary">Best services</h1>
                     <h1 className='text-4xl font-bold!'>In the world</h1>
                     <p class="py-6">We provide the best services that you won't found anywhere in the world. We have premium quality services.</p>
@@ -17,7 +17,7 @@ const Banner = () => {
                     </div>
                 </div>
                 {/* mobile */}
-                <div className='mt-60 p-3 w-full'>
+                <div className='mt-10 flex justify-center md:mt-60 p-3 w-full'>
                     <div class="mockup-phone">
                         <div class="camera"></div>
                         <div class="display">
