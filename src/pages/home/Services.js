@@ -7,8 +7,8 @@ const Services = () => {
         { _id: 3, name: 'Back-End', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.', image: 'https://i.ibb.co/Gk8cjJ9/font-end.png' },
     ];
     return (
-        <div className='py-10' style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
-            <div className='bg-base-200 p-10 rounded-3xl container mx-auto mt-5 md:-mt-48'>
+        <div className='py-16' style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
+            <div className='bg-base-200 p-5 md:p-16 rounded-3xl container mx-auto mt-5 md:-mt-48 shadow-xl'>
                 <h1 className='text-5xl text-center md:text-left font-bold text-primary mb-16'>Services</h1>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-10 container mx-auto'>
                     {

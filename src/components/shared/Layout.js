@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
 const Layout = ({ children }) => {
     return (
@@ -25,6 +26,7 @@ const Layout = ({ children }) => {
                 {/* <!-- Page content here --> */}
                 <div className='w-full min-h-screen'>
                     {children}
+                    <Footer />
                 </div>
             </div>
             <div class="drawer-side">
