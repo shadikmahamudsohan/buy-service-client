@@ -1,14 +1,16 @@
 import './App.css';
 import Layout from './components/shared/Layout';
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/home/Home';
 
 function App() {
   return (
-    // <div className="App">
     <Layout>
-      <h1 className='text-red-500 text-3xl'>Hello world</h1>
-      <button class="btn">Get Started</button>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="*" element={<p>Route not found</p>} />
+      </Routes>
     </Layout>
-    // </div>
   );
 }
 
