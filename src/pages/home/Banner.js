@@ -3,7 +3,7 @@ import { FiArrowDownCircle } from 'react-icons/fi';
 const Banner = () => {
     return (
         <div class="hero" style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
-            <div class="hero-content grid grid-cols-1 md:grid-cols-2 w-full md:w-2/3 mx-auto container">
+            <div class="hero-content grid grid-cols-1 md:grid-cols-2 w-full md:w-4/5 mx-auto container">
 
                 {/* texts */}
                 <div className='w-full pr-0 mt-20 text-center md:text-left md:mt-0 md:pr-14'>
@@ -21,7 +21,7 @@ const Banner = () => {
                     <div class="mockup-phone">
                         <div class="camera"></div>
                         <div class="display">
-                            <div class="artboard bg-base-100 phone-2 p-5 overflow-y-auto">
+                            <div class="artboard bg-base-100 phone-3 p-5 overflow-y-auto">
                                 <div class="tabs pt-10 flex justify-center mb-5">
                                     <span class="tab tab-bordered">Tab 1</span>
                                     <span class="tab tab-bordered tab-active">Tab 2</span>

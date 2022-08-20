@@ -9,18 +9,18 @@ const Services = () => {
     ];
     return (
         <div className='py-16' style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
-            <div className='p-5 md:p-10 rounded-3xl container mx-auto mt-5 md:-mt-52l' >
+            <div className='p-5 md:p-10 rounded-3xl container mx-auto mt-5 md:-mt-44' >
                 <h1 className='text-4xl text-center md:text-left font-bold text-primary mb-16'>Our Services</h1>
                 <div className='grid grid-cols-1 md:grid-cols-4 gap-5 container mx-auto'>
                     {
                         services.map(service => (
                             <div className='shadow-lg rounded-lg overflow-hidden bg-base-100 hover:bg-base-200 transition-all'>
-                                <img src={service.image} alt="" className='w-full md:h-52 h-full object-cover' />
+                                <img src={service.image} alt="" className='w-full md:h-52  object-cover' />
                                 <div className='p-5'>
                                     <h1 className='text-2xl font-bold mb-3'>{service.name}</h1>
                                     <p className='opacity-80'>{service.description}</p>
                                 </div>
-                                <button className="btn btn-secondary w-full rounded-none">Enroll Now</button>
+                                <button className="btn btn-primary w-full rounded-none">Enroll Now</button>
                             </div>
                         ))
                     }
