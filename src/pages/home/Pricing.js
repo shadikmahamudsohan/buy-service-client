@@ -38,7 +38,7 @@ const Pricing = () => {
         },
     ];
     return (
-        <div style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
+        <div>
             <div className="container px-6 py-16 mx-auto">
                 <h2 className="text-4xl font-bold mb-5 text-center text-primary">Pricing List</h2>
                 <div className="flex flex-wrap mt-8 -mx-4">
@@ -46,16 +46,16 @@ const Pricing = () => {
                         <div key={index} className="w-full px-4 sm:w-1/2 lg:w-1/3">
                             <div className="flex flex-col h-full p-6 bg-base-100 rounded-lg shadow-lg">
                                 <div className="flex-1">
-                                    <h4 className="mb-4 text-xl font-semibold text-neutral">{item.title}</h4>
+                                    <h4 className="mb-4 text-xl font-semibold">{item.title}</h4>
                                     <div className="flex items-center mb-4">
-                                        <span className="text-4xl font-semibold text-neutral">{item.price}</span>
-                                        <span className="ml-1 text-lg font-medium text-neutral">/mo</span>
+                                        <span className="text-4xl font-semibold">{item.price}</span>
+                                        <span className="ml-1 text-lg font-medium">/mo</span>
                                         {item.popular && (
                                             <span className="px-2 py-1 ml-2 text-xs font-semibold text-base-100 uppercase bg-primary rounded-full">Popular</span>
                                         )}
                                     </div>
-                                    <p className="mb-4 text-neutral">{item.description}</p>
-                                    <ul className="mb-8 space-y-2 text-neutral">
+                                    <p className="mb-4">{item.description}</p>
+                                    <ul className="mb-8 space-y-2">
                                         {item.features.map((feature, index) => (
                                             <li key={index} className="flex items-center">
                                                 <svg className="w-4 h-4 mr-2 text-primary" fill="currentColor" viewBox="0 0 20 20">

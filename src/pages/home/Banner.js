@@ -2,14 +2,14 @@ import React from 'react';
 import { FiArrowDownCircle } from 'react-icons/fi';
 const Banner = () => {
     return (
-        <div class="hero" style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
+        <div class="hero bg-base-100">
             <div class="hero-content grid grid-cols-1 md:grid-cols-2 w-full md:w-4/5 mx-auto container">
 
                 {/* texts */}
                 <div className='w-full pr-0 mt-20 text-center md:text-left md:mt-0 md:pr-14'>
                     <h1 class="text-6xl font-bold text-primary">Best services</h1>
                     <h1 className='text-4xl font-bold!'>In the world</h1>
-                    <p class="py-6">We provide the best services that you won't found anywhere in the world. We have premium quality services.</p>
+                    <p class="py-6">We provide the best services for making you the best programmer out there. We have professional developers who will teach you every thing about programming. But you have do hard work to become a programmer.</p>
                     <button class="btn btn-primary">Get Started</button>
                     <div className='flex justify-center flex-col items-center mt-5 md:mt-20 w-full'>
                         <FiArrowDownCircle size={60} className="text-primary animate-bounce" />
