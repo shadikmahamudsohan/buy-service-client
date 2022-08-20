@@ -38,7 +38,7 @@ const Pricing = () => {
         },
     ];
     return (
-        <div>
+        <div style={{ backgroundImage: "url(https://img.freepik.com/free-vector/abstract-background-with-squares_23-2148995948.jpg?w=2000)" }}>
             <div className="container px-6 py-16 mx-auto">
                 <h2 className="text-4xl font-bold mb-5 text-center text-primary">Pricing List</h2>
                 <div className="flex flex-wrap mt-8 -mx-4">
