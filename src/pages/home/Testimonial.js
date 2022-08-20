@@ -50,21 +50,21 @@ const Testimonial = () => {
                     <h1 className="text-5xl font-bold text-primary text-center">
                         Customers opinions
                     </h1>
-                    <h1 className="text-5xl font-bold xl:hidden block leading-tight lg:leading-10 text-gray-800">What our customers are saying</h1>
+                    <h1 className="text-5xl font-bold xl:hidden block leading-tight lg:leading-10 text-nature">What our customers are saying</h1>
                     <Slider>
                         <Slide index={0} tabIndex="null">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
                                 {
                                     allData.slice(0, 3).map(data => (
-                                        <div className="flex items-center flex-col justify-center bg-base-300 py-10 rounded-xl mt-10 text-center max-w-sm">
+                                        <div className="flex items-center flex-col justify-center bg-base-200 py-10 rounded-xl mt-10 text-center max-w-sm shadow-lg my-10">
                                             <div class="avatar">
-                                                <div class="w-24 rounded-full">
+                                                <div class="w-24 rounded-full shadow border-base-100">
                                                     <img src="https://placeimg.com/192/192/people" alt="" />
                                                 </div>
                                             </div>
 
                                             <div className="">
-                                                <h1 className="text-2xl font-bold text-gray-800">{data.name}</h1>
+                                                <h1 className="text-2xl font-bold my-5 text-nature">{data.name}</h1>
                                                 <p className="opacity-80 w-full md:w-2/3 mx-auto">{data.description}</p>
                                             </div>
 
@@ -83,15 +83,15 @@ const Testimonial = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                             {
                                 allData.slice(3, 6).map(data => (
-                                    <div className="flex items-center flex-col justify-center bg-base-300 py-10 rounded-xl mt-10 text-center max-w-sm">
+                                    <div className="flex items-center flex-col justify-center bg-base-200 py-10 rounded-xl mt-10 text-center max-w-sm shadow-lg my-10">
                                         <div class="avatar">
-                                            <div class="w-24 rounded-full">
+                                            <div class="w-24 rounded-full shadow border-base-100">
                                                 <img src="https://placeimg.com/192/192/people" alt="" />
                                             </div>
                                         </div>
 
                                         <div className="">
-                                            <h1 className="text-2xl font-bold text-gray-800">{data.name}</h1>
+                                            <h1 className="text-2xl font-bold my-5 text-nature">{data.name}</h1>
                                             <p className="opacity-80 w-full md:w-2/3 mx-auto">{data.description}</p>
                                         </div>
 
