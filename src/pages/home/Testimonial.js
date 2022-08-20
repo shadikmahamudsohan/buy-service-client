@@ -10,37 +10,37 @@ const Testimonial = () => {
             id: 1,
             name: 'John smith',
             description: 'The corse was very help full. I highly recommend you to enroll in them.',
-            image: 'https://i.ibb.co/7XZ5Z5r/1.jpg'
+            image: 'https://i.ibb.co/vVMrVjN/place-Holder.jpg'
         },
         {
             id: 2,
             name: 'John Doe',
             description: 'They explained the topics very well in those video. I am now a full time web developer.',
-            image: 'https://i.ibb.co/7XZ5Z5r/1.jpg'
+            image: 'https://i.ibb.co/vVMrVjN/place-Holder.jpg'
         },
         {
             id: 3,
             name: 'John Doe',
             description: 'This changed my life. I enrolled all the corses and now I am a full time web developer.',
-            image: 'https://i.ibb.co/7XZ5Z5r/1.jpg'
+            image: 'https://i.ibb.co/vVMrVjN/place-Holder.jpg'
         },
         {
             id: 4,
             name: 'John Doe',
             description: 'The teachers are so skilled and talented. I have understand all the courses.',
-            image: 'https://i.ibb.co/7XZ5Z5r/1.jpg'
+            image: 'https://i.ibb.co/vVMrVjN/place-Holder.jpg'
         },
         {
             id: 5,
             name: 'John Doe',
             description: 'Love this website very much. Got all the courses at a very affordable price.',
-            image: 'https://i.ibb.co/7XZ5Z5r/1.jpg'
+            image: 'https://i.ibb.co/vVMrVjN/place-Holder.jpg'
         },
         {
             id: 6,
             name: 'John Doe',
             description: 'I have learned a lot from this website. I am now a full time web developer.',
-            image: 'https://i.ibb.co/7XZ5Z5r/1.jpg'
+            image: 'https://i.ibb.co/vVMrVjN/place-Holder.jpg'
         },
     ];
     return (
@@ -56,10 +56,10 @@ const Testimonial = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 items-center">
                                 {
                                     allData.slice(0, 3).map(data => (
-                                        <div className="flex items-center flex-col justify-center bg-base-200 py-10 rounded-xl mt-10 text-center max-w-sm shadow-lg my-10">
-                                            <div class="avatar">
-                                                <div class="w-24 rounded-full shadow border-base-100">
-                                                    <img src="https://placeimg.com/192/192/people" alt="" />
+                                        <div key={data.id} className="flex items-center flex-col justify-center bg-base-200 py-10 rounded-xl mt-10 text-center max-w-sm shadow-lg my-10">
+                                            <div className="avatar">
+                                                <div className="w-24 rounded-full shadow border-base-100">
+                                                    <img src={data.image} alt="" />
                                                 </div>
                                             </div>
 
@@ -68,44 +68,46 @@ const Testimonial = () => {
                                                 <p className="opacity-80 w-full md:w-2/3 mx-auto">{data.description}</p>
                                             </div>
 
-                                            <div class="rating mt-5">
-                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
+                                            <div className="rating mt-5">
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
                                             </div>
                                         </div>
                                     ))
                                 }
                             </div>
                         </Slide>
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-                            {
-                                allData.slice(3, 6).map(data => (
-                                    <div className="flex items-center flex-col justify-center bg-base-200 py-10 rounded-xl mt-10 text-center max-w-sm shadow-lg my-10">
-                                        <div class="avatar">
-                                            <div class="w-24 rounded-full shadow border-base-100">
-                                                <img src="https://placeimg.com/192/192/people" alt="" />
+                        <Slide index={1} tabIndex="null">
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                                {
+                                    allData.slice(3, 6).map(data => (
+                                        <div key={data.id} className="flex items-center flex-col justify-center bg-base-200 py-10 rounded-xl mt-10 text-center max-w-sm shadow-lg my-10">
+                                            <div className="avatar">
+                                                <div className="w-24 rounded-full shadow border-base-100">
+                                                    <img src={data.image} alt="" />
+                                                </div>
+                                            </div>
+
+                                            <div className="">
+                                                <h1 className="text-2xl font-bold my-5">{data.name}</h1>
+                                                <p className="opacity-80 w-full md:w-2/3 mx-auto">{data.description}</p>
+                                            </div>
+
+                                            <div className="rating mt-5">
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
+                                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" disabled />
                                             </div>
                                         </div>
-
-                                        <div className="">
-                                            <h1 className="text-2xl font-bold my-5">{data.name}</h1>
-                                            <p className="opacity-80 w-full md:w-2/3 mx-auto">{data.description}</p>
-                                        </div>
-
-                                        <div class="rating mt-5">
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" disabled />
-                                        </div>
-                                    </div>
-                                ))
-                            }
-                        </div>
+                                    ))
+                                }
+                            </div>
+                        </Slide>
                     </Slider>
                     <div className="flex w-full justify-center items-center mt-8">
                         <ButtonBack className="btn btn-primary mx-3 " role="button" aria-label="previous slide">

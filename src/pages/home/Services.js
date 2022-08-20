@@ -14,7 +14,7 @@ const Services = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 gap-10 container mx-auto'>
                     {
                         services.map(service => (
-                            <div className='shadow-lg rounded-lg overflow-hidden bg-base-100 hover:bg-base-200 transition-all'>
+                            <div key={service._id} className='shadow-lg rounded-lg overflow-hidden bg-base-100 hover:bg-base-200 transition-all'>
                                 <div className='md:h-80 overflow-hidden'>
                                     <img src={service.image} alt="" className='w-full hover:scale-[1.5] transition-all object-cover' />
                                 </div>
